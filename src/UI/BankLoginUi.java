@@ -1,5 +1,7 @@
 package UI;
 
+import UI.AccountTypeUI.AccountTypeUI;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -47,6 +49,8 @@ public class BankLoginUi extends JFrame implements ActionListener {
             JOptionPane.showMessageDialog(this, "PIN can only be '5'.");
         } else {
             JOptionPane.showMessageDialog(this, "Logged in successfully!");
+            AccountTypeUI account= new AccountTypeUI();
+            account.accountTypeUI();
         }
     }
 
