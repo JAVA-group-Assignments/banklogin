@@ -1,4 +1,4 @@
-# our-Bank-App
+# Bank App GUI - "our-Bank-App"
 A bank GUI appplication, created using Java.
 
 # Contributors to Project
