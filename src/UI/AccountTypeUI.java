@@ -7,6 +7,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
+// Account Type Frame start
+
 public class AccountTypeUI extends JFrame implements ActionListener {
 
     public JLabel titleLabel;
