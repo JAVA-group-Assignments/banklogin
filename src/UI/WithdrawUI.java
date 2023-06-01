@@ -11,11 +11,11 @@ public class WithdrawUI extends JFrame {
     public JTextField amountField;
     public JButton withdrawButton;
 
-    private double balance;
+    private double balance = 100000;
+    private double balance1;
     double amount;
 
     public void makeWithdrawal() {
-        double initialBalance;
 
         setTitle("Enter Withdrawal Amount");
         setSize(300, 200);
@@ -50,12 +50,12 @@ public class WithdrawUI extends JFrame {
 
     private void writeData(){
         amount = Double.parseDouble(amountField.getText());
-        balance -= amount;
+        balance1 -= amount;
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter("myFile.txt", true));
             writer.write(new Date() + " You withdrew: " + amount);
             writer.newLine();
-            writer.write(new Date() + " Balance: " + balance);
+            writer.write(new Date() + " Balance: " + balance1);
             writer.newLine();
             writer.close();
         } catch (IOException e) {
