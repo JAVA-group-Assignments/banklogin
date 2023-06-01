@@ -1,5 +1,6 @@
 import UI.BankLoginUi;
 import UI.WithdrawUI;
+import UI.DepositUI;
 public class Main {
     public static void main(String[] args) {
         BankLoginUi bankLoginUi = new BankLoginUi();
