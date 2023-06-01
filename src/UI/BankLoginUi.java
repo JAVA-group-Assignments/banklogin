@@ -12,7 +12,7 @@ public class BankLoginUi extends JFrame implements ActionListener {
     public JButton loginButton;
 
     public BankLoginUi() {
-        super("Bank Login");
+        super("Login to Your Account");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(300, 150);
         setLocationRelativeTo(null);
